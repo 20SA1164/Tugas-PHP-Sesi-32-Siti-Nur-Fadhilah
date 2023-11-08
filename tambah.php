@@ -33,7 +33,7 @@
                             $query = mysqli_query($conn, "SELECT * FROM kategori_produk");
                             if (mysqli_num_rows($query) > 0) {
                                 while ($data = mysqli_fetch_array($query)) {
-                                    echo "<option value='" . $data["id"] . "'>" . $data["nama_kategori"] . "</option>";
+                                    echo "<option value='" . $data["id_kategori"] . "'>" . $data["nama_kategori"] . "</option>";
                                 }
                             } else {
                                 echo "<option value=''>No items available</option>";
@@ -51,7 +51,7 @@
                             $query = mysqli_query($conn, "SELECT * FROM supplier");
                             if (mysqli_num_rows($query) > 0) {
                                 while ($data = mysqli_fetch_array($query)) {
-                                    echo "<option value='" . $data["id"] . "'>" . $data["nama"] . "</option>";
+                                    echo "<option value='" . $data["id_sup"] . "'>" . $data["nama"] . "</option>";
                                 }
                             } else {
                                 echo "<option value=''>No items available</option>";

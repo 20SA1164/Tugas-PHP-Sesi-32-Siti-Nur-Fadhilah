@@ -43,6 +43,12 @@
                         Supplier
                     </th>
                     <th>
+                        Created at
+                    </th>
+                    <th>
+                        Updated at
+                    </th>
+                    <th>
                         Aksi
                     </th>
                 </tr>
@@ -60,6 +66,8 @@
                     <td><?php echo $data["harga"]?></td>
                     <td><?php echo $data["stok"]?></td>
                     <td><?php echo $data["nama"]?></td>
+                    <td><?php echo $data["created_at"]?></td>
+                    <td><?php echo $data["updated_at"]?></td>
                     <td><a href="edit.php?id=<?php  echo $data["id"]?>"><button type="button" class="btn btn-warning"><i class="fa-regular fa-pen-to-square"></i></button></a>
                     <br> 
                     <a href="proses_delete.php?id=<?php  echo $data["id"]?>"><button type="button" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button></a></td>
